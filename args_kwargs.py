@@ -24,3 +24,12 @@ def func_kwargs(**kwargs):
     print(kwargs)
 
 func_kwargs(name="abin", age="12", school="Amala Convent")
+
+# function to experiment with both *args and **kwargs syntax
+def func_args_kwargs(pin_code, *args, **kwargs):
+    print(f"pincode is {pin_code}")
+    for arg in args:
+        print(f"this value:{arg} is fetched from args")
+    print(f"this value:{kwargs} is fetched from kwargs")
+
+func_args_kwargs(628215, [1,2,3], 100, "Example", name="abin", age="12", school="Amala Convent")
