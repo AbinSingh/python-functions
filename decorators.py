@@ -51,3 +51,12 @@ multiplier = 2
 result = process_items(items, multiplier)
 
 print(f"Input is {items} and output is {result}")
+
+
+# # Apply the decorator manually
+# process_items = validate_inputs((list, int))(process_items)
+#
+# # Now, calling the function
+# items = [1, 2, 3, 4, 5]
+# multiplier = 2
+# result = process_items(items, multiplier)
